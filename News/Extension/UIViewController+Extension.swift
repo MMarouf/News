@@ -5,4 +5,10 @@
 //  Created by Mohamed Marouf on 17/07/2023.
 //
 
-import Foundation
+import UIKit
+
+extension UIViewController {
+    static var className: String {
+        return String(describing: self)
+    }
+}

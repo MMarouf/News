@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+extension String {
+    func stringToDate() -> Date {
+        let dateFormatter = ISO8601DateFormatter()
+        dateFormatter.formatOptions = [.withFullDate] // Added format options
+        let date = dateFormatter.date(from: self) ?? Date.now
+        return date
+    }
+}
