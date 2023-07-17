@@ -11,6 +11,8 @@ import Kingfisher
 private enum Constants {
     static let newsDetailsAccessibilityLabel = "DetailsView"
     static let summaryViewCornerRadius: CGFloat = 10
+    static let summaryBorderColor = UIColor.lightGray.cgColor
+    static let summaryBorderWidth = 1.0
 }
 
 final class NewsDetailsViewController: UIViewController {
@@ -36,6 +38,8 @@ final class NewsDetailsViewController: UIViewController {
     func prepareUI () {
         summaryView.layer.masksToBounds = true
         summaryView.layer.cornerRadius = Constants.summaryViewCornerRadius
+        summaryView.layer.borderWidth = Constants.summaryBorderWidth
+        summaryView.layer.borderColor = Constants.summaryBorderColor
     }
     func updateViewContent (article: Article?) {
         self.title = article?.title

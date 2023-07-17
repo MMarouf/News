@@ -10,7 +10,7 @@ import Foundation
 private enum Constants {
     static let baseUrl = "https://newsapi.org/v2/"
     static let topHeadlines = "top-headlines"
-    static let APIKeyValue = "3f0f5bf70aff419b919954c8bb8e5169"
+    static let APIKeyValue = "a835ebe6edbc4cec98339e2950330bdc"
     static let APIKey = "apiKey"
 
     static let countryKey = "country"
