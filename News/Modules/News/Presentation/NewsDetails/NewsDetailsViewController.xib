@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetailsViewController" customModule="News" customModuleProvider="target">
+            <connections>
+                <outlet property="articleDate" destination="HNU-od-kCp" id="kMU-mM-iGW"/>
+                <outlet property="articleDescription" destination="5Ja-RL-Zfg" id="zQb-Tz-U0m"/>
+                <outlet property="articleImage" destination="gh8-1X-mbV" id="INP-da-2FT"/>
+                <outlet property="articleSource" destination="3hl-hK-BAd" id="seL-Ns-lvZ"/>
+                <outlet property="articleTitle" destination="uuh-aW-uLV" id="l59-ev-b9c"/>
+                <outlet property="summaryView" destination="rn6-rS-EnM" id="duD-lk-O47"/>
+                <outlet property="view" destination="x3N-1u-Cer" id="hfC-2G-ppL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="x3N-1u-Cer">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="gh8-1X-mbV">
+                    <rect key="frame" x="0.0" y="59" width="393" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Csq-f6-pOT"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rn6-rS-EnM">
+                    <rect key="frame" x="16" y="159" width="361" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CNN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuh-aW-uLV">
+                            <rect key="frame" x="8" y="8" width="345" height="56"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CNN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hl-hK-BAd">
+                            <rect key="frame" x="326.33333333333331" y="72" width="26.666666666666686" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="b7n-GG-hrz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.76100367310000006" green="0.75278252359999998" blue="0.76472932100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hour ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNU-od-kCp">
+                            <rect key="frame" x="8.0000000000000036" y="72" width="59.333333333333343" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="V9i-NW-NwX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.76100367310000006" green="0.75278252359999998" blue="0.76472932100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="ArticleBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3hl-hK-BAd" secondAttribute="trailing" constant="8" id="58l-j4-Zes"/>
+                        <constraint firstItem="uuh-aW-uLV" firstAttribute="leading" secondItem="rn6-rS-EnM" secondAttribute="leading" constant="8" id="84f-qw-wr1"/>
+                        <constraint firstAttribute="trailing" secondItem="uuh-aW-uLV" secondAttribute="trailing" constant="8" id="9CW-yv-W2y"/>
+                        <constraint firstItem="HNU-od-kCp" firstAttribute="leading" secondItem="rn6-rS-EnM" secondAttribute="leading" constant="8" id="HnU-ln-1sl"/>
+                        <constraint firstAttribute="height" constant="100" id="QmZ-uR-RJS"/>
+                        <constraint firstItem="uuh-aW-uLV" firstAttribute="top" secondItem="rn6-rS-EnM" secondAttribute="top" constant="8" id="aY1-M6-edp"/>
+                        <constraint firstAttribute="bottom" secondItem="3hl-hK-BAd" secondAttribute="bottom" constant="8" id="auC-B4-Ihd"/>
+                        <constraint firstAttribute="bottom" secondItem="HNU-od-kCp" secondAttribute="bottom" constant="8" id="d8Z-rR-gKv"/>
+                        <constraint firstItem="HNU-od-kCp" firstAttribute="top" secondItem="uuh-aW-uLV" secondAttribute="bottom" constant="8" id="urZ-hp-ptZ"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Ja-RL-Zfg">
+                    <rect key="frame" x="16" y="275" width="361" height="527"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fmN-qB-9Rm"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fmN-qB-9Rm" firstAttribute="trailing" secondItem="5Ja-RL-Zfg" secondAttribute="trailing" constant="16" id="0EA-5c-G4i"/>
+                <constraint firstItem="rn6-rS-EnM" firstAttribute="leading" secondItem="fmN-qB-9Rm" secondAttribute="leading" constant="16" id="FvZ-Ge-ggI"/>
+                <constraint firstItem="5Ja-RL-Zfg" firstAttribute="top" secondItem="rn6-rS-EnM" secondAttribute="bottom" constant="16" id="Hhb-ny-d1x"/>
+                <constraint firstItem="rn6-rS-EnM" firstAttribute="top" secondItem="gh8-1X-mbV" secondAttribute="bottom" constant="-50" id="LIT-ki-NWS"/>
+                <constraint firstItem="fmN-qB-9Rm" firstAttribute="trailing" secondItem="rn6-rS-EnM" secondAttribute="trailing" constant="16" id="Obe-3U-HK8"/>
+                <constraint firstItem="5Ja-RL-Zfg" firstAttribute="leading" secondItem="fmN-qB-9Rm" secondAttribute="leading" constant="16" id="QOn-1Z-1NN"/>
+                <constraint firstItem="fmN-qB-9Rm" firstAttribute="bottom" secondItem="5Ja-RL-Zfg" secondAttribute="bottom" constant="16" id="UNH-gz-ueQ"/>
+                <constraint firstItem="gh8-1X-mbV" firstAttribute="trailing" secondItem="fmN-qB-9Rm" secondAttribute="trailing" id="c8k-1m-S6W"/>
+                <constraint firstItem="gh8-1X-mbV" firstAttribute="leading" secondItem="fmN-qB-9Rm" secondAttribute="leading" id="cus-vy-1pe"/>
+                <constraint firstItem="gh8-1X-mbV" firstAttribute="top" secondItem="fmN-qB-9Rm" secondAttribute="top" id="muM-IL-63c"/>
+            </constraints>
+            <point key="canvasLocation" x="2066" y="-109"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="test" width="1280" height="720"/>
+        <namedColor name="ArticleBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
