@@ -8,16 +8,11 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate {    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupNavigationBarAppearance()
         return true
     }
-
-
     private func setupNavigationBarAppearance() {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(named: "greenHeader")
@@ -27,7 +22,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().tintColor = .white
     }
-
-
 }
-

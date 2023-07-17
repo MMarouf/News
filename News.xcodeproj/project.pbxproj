@@ -15,6 +15,13 @@
 		8C0356DB2A651F1100B2CDC7 /* NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0356DA2A651F1100B2CDC7 /* NewsTests.swift */; };
 		8C0356E52A651F1100B2CDC7 /* NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0356E42A651F1100B2CDC7 /* NewsUITests.swift */; };
 		8C0356E72A651F1100B2CDC7 /* NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0356E62A651F1100B2CDC7 /* NewsUITestsLaunchTests.swift */; };
+		8CF3FC592A6523A20073DBFE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3FC582A6523A20073DBFE /* EndPoint.swift */; };
+		8CF3FC5B2A6523BE0073DBFE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3FC5A2A6523BE0073DBFE /* WebService.swift */; };
+		8CF3FC5D2A6524040073DBFE /* NewsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3FC5C2A6524040073DBFE /* NewsEndpoint.swift */; };
+		8CF3FC5F2A65240F0073DBFE /* NewsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3FC5E2A65240F0073DBFE /* NewsAPIClient.swift */; };
+		8CF3FC612A6524380073DBFE /* Headline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3FC602A6524380073DBFE /* Headline.swift */; };
+		8CF3FC632A65243F0073DBFE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3FC622A65243F0073DBFE /* Category.swift */; };
+		8CF3FC652A6524470073DBFE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3FC642A6524470073DBFE /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		8C0356E02A651F1100B2CDC7 /* NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0356E42A651F1100B2CDC7 /* NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITests.swift; sourceTree = "<group>"; };
 		8C0356E62A651F1100B2CDC7 /* NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CF3FC582A6523A20073DBFE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		8CF3FC5A2A6523BE0073DBFE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		8CF3FC5C2A6524040073DBFE /* NewsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEndpoint.swift; sourceTree = "<group>"; };
+		8CF3FC5E2A65240F0073DBFE /* NewsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIClient.swift; sourceTree = "<group>"; };
+		8CF3FC602A6524380073DBFE /* Headline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headline.swift; sourceTree = "<group>"; };
+		8CF3FC622A65243F0073DBFE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8CF3FC642A6524470073DBFE /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				8C0356FF2A65203200B2CDC7 /* APIService */,
+				8CF3FC602A6524380073DBFE /* Headline.swift */,
+				8CF3FC622A65243F0073DBFE /* Category.swift */,
+				8CF3FC642A6524470073DBFE /* Country.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -185,6 +202,8 @@
 		8C0356F82A651FE700B2CDC7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8CF3FC582A6523A20073DBFE /* EndPoint.swift */,
+				8CF3FC5A2A6523BE0073DBFE /* WebService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -239,6 +258,8 @@
 		8C0356FF2A65203200B2CDC7 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				8CF3FC5C2A6524040073DBFE /* NewsEndpoint.swift */,
+				8CF3FC5E2A65240F0073DBFE /* NewsAPIClient.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -266,6 +287,7 @@
 				8C0356BD2A651F0F00B2CDC7 /* Frameworks */,
 				8C0356BE2A651F0F00B2CDC7 /* Resources */,
 				30F25EFF7FB61EB1EAA14CCF /* [CP] Embed Pods Frameworks */,
+				8CF3FC572A6522F10073DBFE /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -461,6 +483,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-News-NewsUITests/Pods-News-NewsUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8CF3FC572A6522F10073DBFE /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -468,8 +509,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF3FC5F2A65240F0073DBFE /* NewsAPIClient.swift in Sources */,
+				8CF3FC652A6524470073DBFE /* Country.swift in Sources */,
+				8CF3FC592A6523A20073DBFE /* EndPoint.swift in Sources */,
+				8CF3FC612A6524380073DBFE /* Headline.swift in Sources */,
+				8CF3FC5D2A6524040073DBFE /* NewsEndpoint.swift in Sources */,
 				8C0356C42A651F0F00B2CDC7 /* AppDelegate.swift in Sources */,
+				8CF3FC5B2A6523BE0073DBFE /* WebService.swift in Sources */,
 				8C0356C62A651F0F00B2CDC7 /* SceneDelegate.swift in Sources */,
+				8CF3FC632A65243F0073DBFE /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
